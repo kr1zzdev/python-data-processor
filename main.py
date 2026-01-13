@@ -5,12 +5,22 @@ def read_data(file_path):
         reader = csv.DictReader(file)
         return list(reader)
 
-def print_report(data):
+def generate_report(data):
+    total_score = 0
+
     print("Data Report")
     print("-----------")
+
     for row in data:
-        print(row)
+        score = int(row["score"])
+        total_score += score
+        print(f'{row["id"]} - {row["name"]} - Score: {score}')
+
+    average = total_score / len(data)
+    print("-----------")
+    print(f"Total records: {len(data)}")
+    print(f"Average score: {average:.2f}")
 
 if __name__ == "__main__":
     data = read_data("data.csv")
-    print_report(data)
+    generate_report(data)

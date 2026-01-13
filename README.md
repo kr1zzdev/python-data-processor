@@ -1,14 +1,25 @@
 # Python Data Processor
 
-Simple Python project focused on basic data processing and automation.
+Simple data processing project written in Python, focused on automation and basic data analysis.
+
+## Project Structure
+- main.py (data processing script)
+- data.csv (sample dataset)
 
 ## Features
-- Read CSV file
-- Clean simple data
-- Generate report in terminal
+- Read and parse CSV data
+- Generate terminal reports
+- Calculate statistics (average score)
+- Basic automation logic
+
+## Concepts Applied
+- File handling
+- Data parsing
+- Basic data aggregation
+- Clean and readable scripting
 
 ## Technologies
 - Python
 
 ## Purpose
-This project is part of my programming portfolio, focusing on data and automation.
+This project is part of my programming portfolio, demonstrating data processing and automation skills.
